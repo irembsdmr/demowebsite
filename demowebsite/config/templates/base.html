@@ -1,4 +1,4 @@
-{% load staticfiles cms_tags menu_tags sekizai_tags %}
+{% load cms_tags menu_tags sekizai_tags staticfiles %}
 <!DOCTYPE html>
 <html lang="{{ LANGUAGE_CODE }}">
 
@@ -22,7 +22,7 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
     <!-- Custom styles for this template -->
-    <link href="css/agency.min.css" rel="stylesheet">
+    <link href="{% static "css/agency.min.css" }" rel="stylesheet">
     {% render_block "css" %}
   </head>
 
